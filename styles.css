@@ -36,6 +36,12 @@ body {
     display: none;
 }
 
+.hidden-menu a {
+    display: none;
+    cursor: none;
+    position: absolute;
+}
+
 .navbar-styles {    
     background: inherit;
     border-bottom: 1px solid rgba(255, 255, 255, 0.459);     
@@ -99,6 +105,8 @@ body {
     height: 4vh;
     font-size: 1rem;
 }
+
+ /* --------------------about project---------------------- */
 
 .about-project {
     text-align: center;
@@ -181,13 +189,15 @@ body {
     border: 1px solid #dddddd;
     padding: 5px;
     font-size: 2.2rem;
-    width: 4vh;
+    width: 2.6vw;
     margin-right: 3px;
     margin-top: 2vh;
     color: #dddddd;
     text-align: center;
     cursor: pointer;
 }
+
+/* --------------------carusel---------------------- */
 
 .carousel-section {
     height: 50vh;
@@ -226,6 +236,8 @@ body {
     left: 70vw;
 }
 
+/* --------------------download---------------------- */
+
 .download-section {
     text-align: center;
     height: 35vh;
@@ -249,6 +261,8 @@ body {
     text-transform: uppercase;
     font-size: 0.9em;
 }
+
+/* --------------------footer---------------------- */
 
 footer {
     text-align: center;
@@ -302,7 +316,7 @@ footer {
     color: #97989e;
 }
 
-@media (max-width: 970px) {   
+@media (max-width: 1199px) {   
 
     .jumbotron-styles {
         height: 50vh;
@@ -334,6 +348,7 @@ footer {
     }
     .people img {
         margin-top: 3vh;
+        height: 30vh;
         width: 45vw;
     }
 
@@ -374,36 +389,68 @@ footer {
     }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 767px) {
+
     .jumbotron-styles {
-        overflow: hidden;
-    }    
-
-    .navbar-styles {
-        position: absolute;
-        display: none;
-        width: 30vw;
-        background: white;
-        right: 5px;           
+        height: 70vh;
+    }  
+    
+    .navbar-styles img {
+        float: none;
+    }
+    .jumbotron-slogan h1 {
+        font-size: 1.8em;
     }
 
-    .menu {
-        background-color: #db4543;
-        display: block;
-        float: right;
-        margin: 0;
-        position: absolute;
-        right: 2vh;
-        top: 2vh;
-        border-radius: 5%;
+    .about-project i {
+        font-size: 6vh;
+        
     }
 
-    .menu:focus ~ .navbar-styles {
-        display: block;
-        transition-delay: 2s;
+    .about-project p {
+        font-size: 0.8em;
+    }  
+    .people {
+        text-align: center;
     }
 
-    .navbar-styles ul li a {
-        color: red;
+    
+    .people img {
+        margin-top: 8vh;             
+        position: relative;    
+        left: 25vw;
+        height: 23vh;
+    }
+
+    .people i {
+        width: 8vw;
+    }   
+
+    .carousel-text p {
+        font-size: 1em;       
+    }
+
+    .carousel-text h5 {
+        font-size: 0.8em;        
+    }
+
+    .download-section h2 {
+        font-size: 1.4em;
+    }
+
+    footer {
+        height: 40vh;
+    }
+
+    .contact-section i {
+        width: 9vw;
+    }
+
+    .contact-section p {
+        font-size: 0.9em;
+    }   
+
+    .copyright {        
+        margin-top: 5vh;
     }
 }
