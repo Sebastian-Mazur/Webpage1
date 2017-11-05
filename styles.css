@@ -1,0 +1,409 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,800');
+@import url('https://fonts.googleapis.com/css?family=Kalam');
+
+* {
+	box-sizing: border-box;
+}
+
+.clearfix:before, 
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;    
+}
+
+.jumbotron-styles {
+    text-align: center;
+    background: url("https://visualhunt.com/photos/s/1/aerial-view-of-camera-and-digital-tablet-on-wooden-table.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    height: 80vh;   
+}
+
+.jumbotron-opacity {
+    background-color: rgba(47, 50, 76, 0.932);
+    height: inherit;
+    width: inherit;
+}
+
+.menu {
+    border: 0;
+    display: none;
+}
+
+.navbar-styles {    
+    background: inherit;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.459);     
+    position: relative;
+    top: 30px;    
+}
+
+.navbar-styles img {    
+    float: left;
+    margin-bottom: 30px;
+}
+
+.navbar-styles ul{
+    margin: 0;
+	padding: 0;
+	float: right;	
+    list-style-type: none;
+    margin-bottom: 30px;
+}
+
+.navbar-styles ul li {
+    display: inline-block;    
+    text-align: right;    
+}
+
+.navbar-styles ul li:hover a {
+    cursor: pointer;
+    color: #db4543;
+    transition: 0.5s ease;
+}
+.navbar-styles ul li a{    
+	padding: 0 20px;	
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.jumbotron-slogan {
+    position: relative;
+    margin-top: 240px;
+    max-width: 70%;
+    margin: 10vw auto;
+}
+
+.jumbotron-slogan h1 {
+    font-size: 4.2em;
+    margin-bottom: 1.5vw;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.jumbotron-slogan p {
+    margin-bottom: 4vw;
+    font-size: 1.2em;
+}
+
+.jumbotron-slogan button {
+    margin-top: 3vh;
+    width: 25vh;
+    text-transform: uppercase;
+    height: 4vh;
+    font-size: 1rem;
+}
+
+.about-project {
+    text-align: center;
+    margin-top: 10vh;
+    margin-bottom: 15vh;    
+}
+
+.about-project i{
+    font-size: 8vh;
+    color: rgb(232, 69, 69);
+    margin-top: 5vh;
+}
+
+.about-project h4 {
+    text-transform: uppercase;
+    font-size: 1.1em;
+    margin: 1vw auto;
+    font-weight: 800;
+}
+ /* --------------------gallery---------------------- */
+ 
+.gallery {
+    overflow: hidden;       
+}
+
+.gallery img {
+    height: 350px;
+    border: 1px solid white;    
+    padding: 0;
+    position: relative;       
+}
+
+.gallery [class*="gallery-row"] {
+    margin: 0;
+    padding: 0;
+}
+
+.gallery-row .layer {
+    position: absolute;
+    background-color: rgba(232, 69, 69, 0.796);
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    display: none;
+    color: white;
+    padding-top: 15vmin;
+    
+}
+
+.gallery-row .layer h4 {
+    text-transform: uppercase;
+}
+
+.gallery-row .layer p {
+    text-transform: capitalize;
+}
+.gallery-row:hover .layer {
+    display: inline-block;
+    cursor: pointer;      
+}
+
+/* --------------------people---------------------- */
+.people {
+    margin-top: 11vh;
+    margin-bottom: 12vh;
+}
+
+.people h5 {
+    color: red;
+    text-transform: uppercase;
+    margin-bottom: 3vh;
+}
+
+.people img {
+    height: 280px;    
+}
+
+.people i {
+    border: 1px solid #dddddd;
+    padding: 5px;
+    font-size: 2.2rem;
+    width: 4vh;
+    margin-right: 3px;
+    margin-top: 2vh;
+    color: #dddddd;
+    text-align: center;
+    cursor: pointer;
+}
+
+.carousel-section {
+    height: 50vh;
+    background-color: #53354a;
+}
+
+.carousel-section img {
+    max-height: 50vh;
+    width: 50vw;
+}
+
+.carousel-text p {
+    position: absolute;
+    color: white; 
+    width: 25vw;   
+    height: 6vw;
+    top: 10vh; 
+    left: 55vw;
+    padding-bottom: 5vw;
+    font-family: 'Kalam', cursive;
+    font-size: 1.8em;    
+}
+
+.carousel-text h5 {
+    position: absolute;
+    color: white;   
+    top: 25vh; 
+    left: 55vw;
+    text-transform: uppercase;
+    font-weight: 800;    
+}
+
+.carousel-indic {
+    position: absolute;
+    top: 38vh;
+    left: 70vw;
+}
+
+.download-section {
+    text-align: center;
+    height: 35vh;
+    padding-top: 8vh;
+}
+
+.download-section * {
+    margin-top: 2vh;
+}
+
+.download-section button {
+    margin-top: 3vh;
+    width: 25vh;
+    text-transform: uppercase;
+    height: 4vh;
+    font-size: 1rem;
+}
+
+.download-section h4 {
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 0.9em;
+}
+
+footer {
+    text-align: center;
+    background-color: #3a3e64;
+    color: white;
+    height: 35vh;    
+}
+
+.contact-section {
+    height: 26vh;
+    padding-top: 6vh;
+}
+
+.contact-section h5 {
+    text-transform: uppercase;
+}
+
+.contact-section i {
+    border: 2px solid white;
+    padding: 5px;
+    font-size: 2.2rem;
+    width: 4vh;
+    margin-left: 3px;
+}
+
+.contact-section i:hover {
+    cursor: pointer;
+    background-color: white;
+    color: #3a3e64;    
+}
+
+.copyright {
+    background-color: #313454;
+    height: 9vh;
+    color: #808080;
+}
+
+.copyright p {
+    padding-top: 2.5vh;
+}
+
+.hearth {
+    color: #e84545;
+}
+
+.name {
+    color: white;
+}
+
+.text-grey {
+    color: #97989e;
+}
+
+@media (max-width: 970px) {   
+
+    .jumbotron-styles {
+        height: 50vh;
+    }
+
+    .navbar-styles ul li a {
+        padding: 8px;
+    }
+
+    .jumbotron-slogan h1 {
+        font-size: 2.7em;
+    }
+
+    .jumbotron-slogan p {
+        font-size: 1em;
+    }
+
+    .about-project {
+        margin-top: 3vh;
+        margin-bottom: 8vh;
+    }
+    .about-project i {
+        margin-top: 4vh;
+    }
+
+    .people {
+        margin-top: 8vh;
+        margin-bottom: 7vh;
+    }
+    .people img {
+        margin-top: 3vh;
+        width: 45vw;
+    }
+
+    .carousel-section {
+        height: 35vh;
+    }
+
+    .carousel-section img {
+        min-height: 35vh;
+        width: 50vw;
+    }
+
+    .carousel-text p {
+        font-size: 1.6em;
+        top: 3vh;
+        width: 40vw;
+    }
+
+    .carousel-text h5 {
+        top: 23vh;
+    }
+
+    .carousel-indic {
+        top: 30vh;
+    }
+
+    .download-section {
+        height: 27vh;
+        padding-top: 4vh;
+    }
+    .contact-section {
+        padding-top: 3vh;
+    }
+
+    .footer-company-info {
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+    }
+}
+
+@media (max-width: 750px) {
+    .jumbotron-styles {
+        overflow: hidden;
+    }    
+
+    .navbar-styles {
+        position: absolute;
+        display: none;
+        width: 30vw;
+        background: white;
+        right: 5px;           
+    }
+
+    .menu {
+        background-color: #db4543;
+        display: block;
+        float: right;
+        margin: 0;
+        position: absolute;
+        right: 2vh;
+        top: 2vh;
+        border-radius: 5%;
+    }
+
+    .menu:focus ~ .navbar-styles {
+        display: block;
+        transition-delay: 2s;
+    }
+
+    .navbar-styles ul li a {
+        color: red;
+    }
+}
